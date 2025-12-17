@@ -12,3 +12,13 @@
     input, textarea, button { padding: .75rem; font-size: 1rem; }
     button { background: #000; color: #fff; border: none; cursor: pointer; }
     footer { text-align: center; padding: 1.5rem; background: #eee; margin-top: 3rem; }
+
+iframe {
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#booking {
+  max-width: 800px;
+  margin: 60px auto;
+}
