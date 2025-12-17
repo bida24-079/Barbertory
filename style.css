@@ -17,7 +17,6 @@
   background: #000;
   padding: 20px 0;
 }
-
 .nav-container {
   max-width: 1100px;
   margin: auto;
@@ -25,7 +24,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   color: #fff;
   font-size: 24px;
@@ -36,15 +34,26 @@
   display: flex;
   gap: 25px;
 }
-
 .nav-links a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
-
 .nav-links a:hover {
   text-decoration: underline;
+}
+.hero {
+  background: url("images/salon.jpg") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.hero-text {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 40px;
+  margin-left: 80px;
+  border-radius: 8px;
 }
 
 
