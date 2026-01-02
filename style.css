@@ -74,9 +74,7 @@ section { margin-bottom: 100px;}
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.booking {
-  text-align: center;
-}
+.booking {text-align: center;}
 .booking-box {
   max-width: 600px;
   margin: 40px auto 0;
@@ -84,5 +82,11 @@ section { margin-bottom: 100px;}
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+body {background: #f4f4f4;}
+section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 
