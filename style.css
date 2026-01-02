@@ -56,9 +56,7 @@
   border-radius: 8px;
 }
 
-
 iframe {border-radius: 8px; margin-top: 20px;}
-
 #booking {  max-width: 800px; margin: 60px auto;}
 
 .services-grid {
@@ -72,5 +70,17 @@ iframe {border-radius: 8px; margin-top: 20px;}
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.booking {
+  text-align: center;
+}
+.booking-box {
+  max-width: 600px;
+  margin: 40px auto 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
