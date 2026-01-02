@@ -57,7 +57,9 @@
 }
 
 iframe {border-radius: 8px; margin-top: 20px;}
-#booking {  max-width: 800px; margin: 60px auto;}
+#booking { max-width: 800px; margin: 60px auto;}
+
+section { margin-bottom: 100px;}
 
 .services-grid {
   display: grid;
