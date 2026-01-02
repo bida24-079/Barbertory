@@ -38,50 +38,54 @@
   text-decoration: underline;
 }
 .hero {
-  background: url("images/salon.jpg") center/cover no-repeat;
-  height: 80vh;
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("../images/salon.jpg") center/cover no-repeat;
+
   display: flex;
   align-items: center;
 }
-.hero-text {
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  padding: 40px;
-  margin-left: 80px;
-  border-radius: 8px;
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+  color: white;
+  padding: 60px 20px;
 }
-
-iframe {border-radius: 8px; margin-top: 20px;}
-#booking { max-width: 800px; margin: 60px auto;}
-
-section { margin-bottom: 100px;}
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-bottom: 80px;
-}
-.service-card {
-  padding: 25px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  gap: 30px;
 }
 
-.booking {text-align: center;}
-.booking-box {
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.booking-section iframe {
   max-width: 600px;
+  display: block;
   margin: 40px auto 0;
-  padding: 20px;
-  background: #fff;
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 body {background: #f4f4f4;}
 section h2 {
   font-size: 32px;
   margin-bottom: 30px;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
 }
 
