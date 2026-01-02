@@ -57,12 +57,20 @@
 }
 
 
-iframe {
-  border-radius: 8px;
-  margin-top: 20px;
+iframe {border-radius: 8px; margin-top: 20px;}
+
+#booking {  max-width: 800px; margin: 60px auto;}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 80px;
+}
+.service-card {
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-#booking {
-  max-width: 800px;
-  margin: 60px auto;
-}
