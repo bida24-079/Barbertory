@@ -22,7 +22,9 @@
   font-size: 20px;
   font-weight: 600;
 }
-
+.brand {
+  text-decoration: none;
+}
 
 .header {
   background: #000;
