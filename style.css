@@ -8,6 +8,22 @@
     button { background: #000; color: #fff; border: none; cursor: pointer; }
     footer { text-align: center; padding: 1.5rem; background: #eee; margin-top: 3rem; }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+.brand-name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
 .header {
   background: #000;
   padding: 20px 0;
