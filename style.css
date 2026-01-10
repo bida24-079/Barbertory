@@ -82,7 +82,7 @@
       rgba(0,0,0,0.6),
       rgba(0,0,0,0.6)
     ),
-    url("../images/salon.jpg") center/cover no-repeat;
+    url("images/salon.jpg") center/cover no-repeat;
 justify-content: center;
 text-align: center;
   display: flex;
