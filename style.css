@@ -15,7 +15,7 @@ body {
 /* HEADER */
 .site-header {
   background: #000;
-  padding: 18px 0;
+  padding: 20px 0;
 }
 
 .nav-container {
@@ -35,13 +35,13 @@ body {
 }
 
 .logo-img {
-  height: 35px;
+  height: 60px;
   width: auto;
 }
 
 .brand-name {
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -61,12 +61,18 @@ body {
   opacity: 0.8;
 }
 
-/* HERO - SIMPLE & CLEAN */
+/* HERO - With Background Image */
 .hero {
-  background: #000;
+  min-height: 80vh; /* Ensures enough height */
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), /* Dark overlay for readability */
+    url('salon.jpg') center center / cover no-repeat; /* Background image */
   color: white;
-  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 60px 20px;
 }
 
 .hero-content {
