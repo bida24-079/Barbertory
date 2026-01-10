@@ -1,29 +1,30 @@
+/* RESET & BASE */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #222;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.5;
 }
 
-/* Header & Navigation */
+/* HEADER */
 .site-header {
   background: #000;
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .nav-container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 
 .brand {
@@ -34,13 +35,13 @@ body {
 }
 
 .logo-img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 
 .brand-name {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -53,159 +54,171 @@ body {
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.3s ease;
+  font-size: 15px;
 }
 
 .nav-links a:hover {
   opacity: 0.8;
-  text-decoration: underline;
 }
 
-/* Hero Section */
+/* HERO - SIMPLE & CLEAN */
 .hero {
-  min-height: 80vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("salon.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #000;
+  color: white;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .hero-content {
-  max-width: 1100px;
-  margin: auto;
-  color: white;
-  padding: 60px 20px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Button */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
-  background: #fff;
-  color: #000;
+  padding: 12px 28px;
+  background: white;
+  color: black;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #000;
-  color: #fff;
-  border-color: #fff;
+  background: #f0f0f0;
 }
 
-/* Main Sections */
-.section {
-  max-width: 1100px;
+/* MAIN CONTENT - CLEAN LAYOUT */
+.main-content {
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 0 20px;
 }
 
-.section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
   text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  font-weight: 600;
 }
 
-/* Services Grid */
+/* SERVICES - CLEAN 3-COLUMN GRID */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
 .service-card {
   background: white;
-  padding: 40px 30px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 35px 25px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
 
 .service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #222;
 }
 
 .service-card p {
   color: #666;
+  font-size: 0.95rem;
   line-height: 1.5;
 }
 
-/* Booking Section */
+/* BOOKING SECTION */
 .booking-section {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  margin-top: 40px;
   text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.booking-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.booking-section > p {
+  color: #666;
+  margin-bottom: 35px;
 }
 
 .booking-section iframe {
-  max-width: 600px;
   width: 100%;
-  display: block;
-  margin: 40px auto 0;
-  border-radius: 16px;
+  max-width: 600px;
+  height: 650px;
   border: none;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #222;
+  background: #111;
   color: white;
-  margin-top: 3rem;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
 }
 
 footer p {
   font-size: 0.9rem;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 20px;
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
   }
   
   .nav-links {
     gap: 15px;
   }
   
-  .hero-content h1 {
+  .hero h1 {
     font-size: 2.2rem;
   }
   
-  .section h2 {
-    font-size: 2rem;
-  }
-  
-  .services-grid {
-    grid-template-columns: 1fr;
+  .booking-section {
+    padding: 30px 20px;
   }
 }
