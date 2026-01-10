@@ -63,7 +63,7 @@ body {
 
 /* HERO - With Background Image */
 .hero {
-  min-height: 80vh; /* Ensures enough height */
+  min-height: 50vh; /* Ensures enough height */
   background: 
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), /* Dark overlay for readability */
     url('salon.jpg') center center / cover no-repeat; /* Background image */
